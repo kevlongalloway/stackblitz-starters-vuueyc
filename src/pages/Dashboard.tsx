@@ -29,8 +29,9 @@ function Dashboard() {
             },
         }).then((response) => response.json())
         .then(function (data) {
+            console.log(data.completed);
             setQuestionnaireCompleted(data.completed);
-            if (!questionnaireCompleted) {
+            if (!data.completed) {
                 setTimeout(() => {
                     handleOpenModal();
                     // Perform any actions or state updates here
