@@ -1,7 +1,7 @@
 {
   "name": "stackblitz-starters-tf9ncw",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@headlessui/react": "1.7.15",
     "@heroicons/react": "2.0.18",
