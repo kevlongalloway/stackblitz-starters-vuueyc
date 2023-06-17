@@ -31,6 +31,7 @@ export default function Questionnaire() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    console.log(formData);
 
     fetch('https://kevlongalloway.shop/api/v1/answers', {
       method: 'POST',
