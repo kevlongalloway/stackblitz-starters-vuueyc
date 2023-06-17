@@ -1,0 +1,30 @@
+{
+  "name": "stackblitz-starters-tf9ncw",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "1.7.15",
+    "@heroicons/react": "2.0.18",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
+    "debug": "4.3.4",
+    "events": "3.3.0",
+    "http": "0.0.0",
+    "https": "1.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "react-router-dom": "6.13.0",
+    "react-transition-group": "4.4.5",
+    "zlib": "1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
