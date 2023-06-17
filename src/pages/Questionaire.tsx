@@ -31,7 +31,6 @@ export default function Questionnaire() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log(formData);
 
     fetch('https://kevlongalloway.shop/api/v1/answers', {
       method: 'POST',
@@ -40,11 +39,11 @@ export default function Questionnaire() {
         Authorization: 'Bearer ' + localStorage.getItem('access_token'),
         // Add any necessary authorization headers
       },
-      body: JSON.stringify({ answers: Object.values(formData) }),
+      body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data); // Handle the response from the server
+        console.log(formData); // Handle the response from the server
         // Redirect or perform any other actions as needed
       })
       .catch((error) => {
